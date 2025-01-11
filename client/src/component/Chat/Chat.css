@@ -24,12 +24,16 @@
    border-top-right-radius: 20px;
 }
 
-.header>h2{
+.header>div>h2{
     font-size: 1.5vmax;
     color: rgb(0, 0, 0);
-    margin: 2.5vmax;
+    margin: 2.5vmax 2.5vmax 1.5vmax 2.5vmax;
 }
+.header>div{
+    display: flex;
+    flex-direction: column;
 
+}
 .header img{
     
     margin: 2.5vmax;
@@ -93,7 +97,8 @@
     transform: translateX(10px);
 }
 .typingIndicator {
-    font-size: 14px;
-    color: gray;
-    margin-top: 10px;
+    font-size: 1.3vmax;
+    color: rgb(88, 87, 87);
+    margin-left: 2.5vmax;
+    margin-bottom: 1.5vmax;
 }

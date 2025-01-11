@@ -80,7 +80,7 @@ const Chat = () => {
 
         const timeout = setTimeout(() => {
             socket.emit('typing', { userTyping: user, isTyping: false });
-        }, 8000);
+        }, 1000);
 
         setTypingTimeout(timeout);
     };
@@ -93,11 +93,13 @@ const Chat = () => {
             <div className="chatContainer">
                 {/* Chat header */}
                 <div className="header">
+                <div>
                     <h2>Real-Time Chat App</h2>
+                
+                    {typingUser && <div className="typingIndicator">{typingUser} is typing...</div>}
+                </div>
                     <a href="/"> <img src={closeIcon} alt="Close" /></a>
                 </div>
-                {/* Show typing indicator */}
-                {typingUser && <div className="typingIndicator">{typingUser} is typing...</div>}
 
 
                 {/* Chat messages */}
