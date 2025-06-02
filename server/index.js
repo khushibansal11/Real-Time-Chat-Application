@@ -9,7 +9,11 @@ const port= process.env.PORT || 5000;
 
 const users=[{}];
 
-app.use(cors());
+app.use(cors({
+  origin: "*", 
+  methods: ["GET", "POST"]
+}));
+
 app.get("/",(req,res)=>{
     res.send("WORKING");
 })
