@@ -2,6 +2,8 @@
 
 This project consists of a **frontend** (React) and **backend** (Node.js with Socket.io) for building a real-time chat application.
 
+Live demo: https://real-time-chat-application-two-gamma.vercel.app/
+
 ## Backend (Server) Setup
 
 ### Step 1: Navigate to the server folder
